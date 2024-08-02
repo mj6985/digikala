@@ -1,0 +1,402 @@
+.AMAZING-all {
+    width: 90%;
+    height: 5150px;
+    margin: 20px auto;
+    font-family: var(--iranyekan);
+    display: flex;
+    column-gap: 1%;
+  
+    .AMAZING-all__filters {
+      width: 20%;
+      height: 600px;
+      border-radius: 10px;
+      border: 1px solid lightgray;
+      position: sticky;
+      top: 85px;
+      font-family: var(--iranyekan);
+      .AMAZING-all__filters__top-text {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        padding: 15px;
+      }
+      .AMAZING-all__filters__brand {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      .AMAZING-all__filters__tomarrow-shipping {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .AMAZING-all__filters__tomarrow-shipping__text {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .AMAZING-all__filters__only-supermarket {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .AMAZING-all__filters__only-supermarket__text {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .AMAZING-all__filters__seller-shipping {
+        width: 94%;
+        height: 70px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        cursor: pointer;
+        flex-flow: row wrap;
+        .AMAZING-all__filters__seller-shipping__top {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          line-height: 40px;
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+        .AMAZING-all__filters__seller-shipping__bottom {
+          width: 94%;
+          height: 50px;
+          line-height: 50px;
+          margin-bottom: 40px;
+          font-size: 14px;
+          line-height: 15px;
+          color: #81858b;
+        }
+      }
+      .AMAZING-all__filters__span {
+        width: 90%;
+        display: block;
+        height: 1px;
+        border: unset;
+        border-top: 1px solid lightgray;
+        margin: 6px auto;
+        cursor: pointer;
+      }
+      .AMAZING-all__filters__price {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      .AMAZING-all__filters__instorage-goods {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      .AMAZING-all__filters__type-of-seller {
+        width: 94%;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      .AMAZING-all__filters__digikala-instorage {
+        width: 94%;
+        height: 70px;
+        line-height: 30px;
+        padding-right: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      .AMAZING-all__filters__bottom {
+        width: 43px;
+        height: 25px;
+        border-radius: 17px;
+        border: 2.5px solid #b4b4b9;
+        position: relative;
+  
+        .AMAZING-all__filters__bottom__inside {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #b4b4b9;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+        }
+      }
+    }
+    .AMAZING-all__main-items {
+      width: 80%;
+      height: 600px;
+      .AMAZING-all__main-items__ordering {
+        width: 99%;
+        height: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        margin-bottom: 15px;
+        .AMAZING-all__main-items__ordering__bold {
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          font-size: 14px;
+        }
+        .AMAZING-all__main-items__ordering__items {
+          font-size: 12px;
+          color: #81858b;
+          cursor: pointer;
+          &:active {
+            color: red;
+          }
+        }
+        .AMAZING-all__main-items__ordering__number-of-products {
+          font-size: 12px;
+          color: #81858b;
+          margin-right: 185px;
+        }
+      }
+      .AMAZING-all__main-items__ordering__products {
+        display: flex;
+        flex-flow: row wrap;
+  
+        .AMAZING-all__main-items__ordering__products__product {
+          width: 25%;
+          height: 510px;
+          border-top: 1px solid lightgray;
+          border-left: 1px solid lightgray;
+          padding: 10px;
+          cursor: pointer;
+          .AMAZING-all__main-items__ordering__products__product__suggestion {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            color: #b245a5;
+          }
+          .AMAZING-all__main-items__ordering__products__product__picture {
+            width: 240px;
+            height: 240px;
+            background-color: white;
+            margin: 0 auto;
+            img {
+              width: 240px;
+              height: 240px;
+            }
+          }
+          .AMAZING-all__main-items__ordering__products__product__text {
+            width: 95%;
+            height: 40px;
+            margin: 15px auto;
+            font-size: 11px;
+          }
+          .AMAZING-all__main-items__ordering__products__product__tag {
+            width: 96%;
+            height: 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .AMAZING-all__main-items__ordering__products__product__tag__today-shipping {
+              width: 100%;
+              height: 13px;
+              display: flex;
+              align-items: center;
+              column-gap: 5px;
+              font-size: 11px;
+              color: #81858b;
+              background-color: white;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+            .AMAZING-all__main-items__ordering__products__product__tag__seller-shipping {
+              width: 100%;
+              height: inherit;
+              display: flex;
+              align-items: center;
+              column-gap: 5px;
+              font-size: 11px;
+              color: #81858b;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+            .AMAZING-all__main-items__ordering__products__product__tag__star {
+              display: flex;
+              column-gap: 5px;
+              font-size: 13px;
+              align-items: center;
+              direction: rtl;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+          .AMAZING-all__main-items__ordering__products__product__price-and-discount {
+            width: 96%;
+            height: 30px;
+            display: flex;
+  
+            direction: ltr;
+            justify-content: space-between;
+            margin: 10px auto 0px auto;
+            .AMAZING-all__main-items__ordering__products__product__discoutn {
+              width: 40px;
+              height: 20px;
+              background-color: red;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 15px;
+              font-family: var(--Bnazanin);
+              color: white;
+              font-weight: 700;
+            }
+            .AMAZING-all__main-items__ordering__products__product__price {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              column-gap: 5px;
+              font-family: var(--Bnazanin);
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .AMAZING-all__main-items__ordering__products__product__pure-price {
+            width: 91%;
+            text-align: left;
+            font-family: var(--Bnazanin);
+            text-decoration: line-through;
+            color: #81858b;
+            font-size: 14px;
+          }
+          .AMAZING-all__main-items__ordering__products__product__bar {
+            width: 96%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: red;
+            margin: 5px auto;
+          }
+          .AMAZING-all__main-items__ordering__products__product__info {
+            width: 96%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+  
+            .AMAZING-all__main-items__ordering__products__product__info__sell-percent {
+              color: #81858b;
+              font-size: 12px;
+              display: flex;
+              column-gap: 5px;
+              div {
+                color: red;
+              }
+            }
+            .AMAZING-all__main-items__ordering__products__product__info__timer {
+              font-size: 12px;
+              color: red;
+            }
+          }
+          .AMAZING-all__main-items__ordering__products__product__endcell {
+            width: 98%;
+            height: 20px;
+            color: #bfc3c8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 3px;
+            margin-top: 85px;
+            .AMAZING-all__main-items__ordering__products__product__endcell__span {
+              width: 82px;
+              height: 1px;
+              background-color: #bfc3c8;
+            }
+            .AMAZING-all__main-items__ordering__products__product__endcell__text {
+              font-size: 13px;
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 7px lightgray;
+          }
+        }
+      }
+    }
+  }
+  .AMAZING-all__top-text {
+    width: 90%;
+    height: 30px;
+    padding: 20px 0;
+    margin: 20px auto;
+    font-family: var(--iranyekan);
+  }
+  .AMAZING-all__main-items__ordering__products__product:nth-last-of-type(4n-3) {
+    border-left: 0 !important;
+  }
+  

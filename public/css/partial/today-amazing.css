@@ -1,0 +1,166 @@
+.today-amazing {
+    width: 90%;
+    height: 350px;
+    background-color: #cc3148;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-image: url(../../images/today\ amazing/backgraound.svg);
+    background-repeat: repeat-x;
+    font-family: var(--iranyekan);
+    padding: 20px 10px;
+    .today-amazing__top-text {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      color: white;
+      img {
+        width: 24px;
+      }
+    }
+    .today-amazing__slider {
+      width: 100%;
+      height: 260px;
+      margin: 25px auto 0 auto;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 15px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+  
+        .swiper-slide__today-amazing__top {
+          img {
+            width: 116px;
+            height: 14px;
+          }
+        }
+        .swiper-slide__today-amazing__bottom {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          flex-flow: row wrap;
+          .swiper-slide__today-amazing__bottom__picture {
+            width: 29%;
+            img {
+              width: 200px;
+              height: 200px;
+            }
+          }
+          .swiper-slide__today-amazing__bottom__info {
+            width: 69%;
+            font-size: 13px;
+            padding: 20px 20px 0 0;
+            text-align: justify;
+            .swiper-slide__today-amazing__bottom__info__text {
+              width: 90%;
+              line-height: 27px;
+            }
+            .swiper-slide__today-amazing__bottom__info__star {
+              direction: ltr;
+              display: flex;
+              align-items: center;
+              column-gap: 5px;
+              margin-top: 10px;
+              img {
+                width: 18px;
+              }
+            }
+            .swiper-slide__today-amazing__bottom__info__price-and-discount {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              margin-top: 15px;
+              .swiper-slide__today-amazing__bottom__info__price-and-discount__price {
+                display: flex;
+                column-gap: 5px;
+                align-items: center;
+              }
+              .swiper-slide__today-amazing__bottom__info__price-and-discount__discount {
+                width: 33px;
+                height: 20px;
+                line-height: 20px;
+                background-color: #d3334a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                color: white;
+              }
+            }
+            .swiper-slide__today-amazing__bottom__info__pure-price {
+              text-decoration: line-through;
+              direction: ltr;
+              margin-left: 19px;
+              margin-top: 6px;
+              font-size: 11px;
+              color: gray;
+            }
+            .swiper-slide__today-amazing__bottom__info__timer {
+              direction: ltr;
+              margin: 20px 0;
+              color: red;
+            }
+          }
+        }
+        .unknown-amazing {
+          width: 585px;
+          height: 260px;
+          position: relative;
+          .unknown-amazing__picute {
+            width: 160px;
+            height: 160px;
+          }
+          .unknown-amazing__lock-wrapper {
+            width: 585px;
+            height: 260px;
+            z-index: 500;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            .unknown-amazing__lock-wrapper__lock-icon {
+              width: 100px;
+              height: 100px;
+              background-color: red;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 20px;
+              img {
+                width: 70px;
+                height: 70px;
+              }
+            }
+            .unknown-amazing__lock-wrapper__text {
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .unknown-amazing-background {
+    background-color: #565656 !important;
+  }
+  

@@ -1,0 +1,149 @@
+.mega-manu {
+    .mega-manu__link {
+      display: flex;
+      color: #67666d;
+      width: inherit;
+      padding: 0 10px;
+      height: inherit;
+      text-decoration: none;
+      font-family: var(--iranyekan);
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+      position: relative;
+      img {
+        width: 18px;
+      }
+    }
+    .mega-manu__submenu {
+      width: 100vw;
+      height: calc(100vh - 40px);
+      background-color: #67666d99;
+      position: absolute;
+      z-index: 2;
+      right: -10px;
+      top: 30px;
+      overflow: hidden;
+      display: none;
+      .mega-manu__submenu__subsubmenu {
+        position: absolute;
+        width: 80%;
+        height: 70%;
+        background-color: white;
+        right: 20px;
+        border-radius: 0 0 0 15px;
+        .mega-manu__submenu__subsubmenu__right {
+          width: 20%;
+          height: 100%;
+          background-color: green;
+          overflow: auto;
+          direction: ltr;
+          .mega-manu__submenu__subsubmenu__right__items {
+            width: 100%;
+            height: 55px;
+            color: black;
+            direction: rtl;
+            .mega-manu__submenu__subsubmenu__right__items__link {
+              justify-content: flex-start;
+              background-color: #f0f0f1;
+              color: black;
+              line-height: 55px;
+            }
+            &:hover .mega-manu__submenu__subsubmenu__right__items__link {
+              background-color: white;
+              color: red;
+              .mega-manu__submenu__subsubmenu__right__items__link__svg {
+                use {
+                  fill: #ed3a55;
+                }
+              }
+            }
+            .mega-manu__submenu__subsubmenu__right__subsubsubmenu {
+              width: 80%;
+              height: 100%;
+              position: absolute;
+              right: 20%;
+              top: 0;
+              border-radius: 0 0 0 15px;
+              display: none;
+              overflow: auto;
+              direction: ltr;
+              flex-flow: row wrap;
+              background-color: white;
+  
+              .mega-manu__submenu__subsubmenu__right__subsubsubmenu__top {
+                width: 100%;
+                height: 70px;
+                display: block;
+                padding-right: 20px;
+                direction: rtl;
+                .mega-manu__submenu__subsubmenu__right__subsubsubmenu__top__link {
+                  justify-content: flex-start;
+                  color: #57cedd;
+                  font-size: 12px;
+                  line-height: 70px;
+                }
+              }
+              .mega-manu__submenu__subsubmenu__right__subsubsubmenu__bottom {
+                width: 100%;
+                display: flex;
+                height: fit-content;
+                direction: rtl;
+                .mega-manu__submenu__subsubmenu__right__subsubsubmenu__bottom__items {
+                  width: 25%;
+                  height: inherit;
+                  display: flex;
+                  flex-flow: column wrap;
+  
+                  .mega-manu__submenu__subsubmenu__right__subsubsubmenu__bottom__items__bold {
+                    line-height: 20px;
+                    width: 100%;
+                    height: 30px;
+                    padding-right: 20px;
+                    color: black;
+                    justify-content: flex-start;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    .mega-manu__submenu__subsubmenu__right__subsubsubmenu__bottom__items__text__bold__span {
+                      width: 3px;
+                      height: 20px;
+                      background-color: red;
+                    }
+                    &:hover {
+                      color: red;
+                    }
+                  }
+  
+                  .mega-manu__submenu__subsubmenu__right__subsubsubmenu__bottom__items__regular {
+                    font-size: 12px;
+                    width: 100%;
+                    color: gray;
+                    justify-content: flex-start;
+                    height: 15px;
+                    margin-bottom: 20px;
+                    height: 12px;
+                    padding-right: 20px;
+                    &:hover {
+                      color: red;
+                    }
+                  }
+                }
+              }
+            }
+            &:hover .mega-manu__submenu__subsubmenu__right__subsubsubmenu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    &:hover .mega-manu__submenu {
+      display: block;
+    }
+  }
+  
+  .mega-manu:hover .active {
+    display: block !important;
+  }
+  

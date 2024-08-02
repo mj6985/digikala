@@ -1,0 +1,115 @@
+.mostsellmarket {
+    width: 90%;
+    height: 110px;
+    background: no-repeat url("../../../images/mostsellmaket/backgraound.svg")
+      #eceeee;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  
+    .mostsellmarket__right {
+      width: 470px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 10px;
+      margin-right: 40px;
+      .img-1 {
+        width: 66px;
+        height: 62px;
+      }
+      .img-2 {
+        width: 250px;
+        height: 28px;
+      }
+      div {
+        font-family: var(--iranyekan);
+        width: 110px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #029a49;
+        border-radius: 15px;
+        color: white;
+      }
+    }
+    .mostsellmarket__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .mostsellmarket__left__items {
+        display: flex;
+        column-gap: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+  
+        .mostsellmarket__left__item__product {
+          width: 74px;
+          height: 74px;
+          position: relative;
+  
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .mostsellmarket__left__items__discount {
+          width: 34px;
+          height: 20px;
+          background-color: #d32f2f;
+          border-radius: 15px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          font-family: var(--Bnazanin);
+          line-height: 20px;
+          color: white;
+          font-weight: 600;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .mostsellmarket__left__items__discount-1 {
+        width: 34px;
+        height: 20px;
+        background-color: #d32f2f;
+        border-radius: 15px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-family: var(--Bnazanin);
+        line-height: 20px;
+        color: white;
+        font-weight: 600;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .mostsellmarket__left__more {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--iranyekan);
+    color: #029a49;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-right: 10px;
+    img {
+      width: 20px;
+    }
+  }
+  

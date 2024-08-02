@@ -1,0 +1,171 @@
+.poshtibani {
+    z-index: 5;
+    #show , #close{
+      display: none;
+    }
+    .poshtibani__icon__top {
+      width: 50px;
+      height: 50px;
+      background-color: #ef4056;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 30px;
+      right: 45px;
+      z-index: 2;
+      cursor: pointer;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .poshtibani__icon__down {
+      width: 50px;
+      height: 50px;
+      background-color: #ef4056;
+      border-radius: 50%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 30px;
+      right: 45px;
+      font-size: 30px;
+      font-weight: bolder;
+      color: white;
+      z-index: 2;
+      cursor: pointer;
+    }
+  
+    .poshtibani__page {
+      width: 370px;
+      height: 440px;
+      background-color: white;
+      position: fixed;
+      bottom: 80px;
+      right: 45px;
+      z-index: 500;
+      border-radius: 20px;
+      display: none;
+  
+      .poshtibani__page__top {
+        width: inherit;
+        height: 50px;
+        background-color: #ef4056;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+          justify-content: space-between;
+          align-items: center;
+        .poshtibani__page__top__text {
+          color: white;
+          font-size: 20px;
+          width: 320px;
+          margin: 0 auto;
+          line-height: 50px;
+          font-family: var(--iranyekan);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img{
+            margin-top:15px;
+          }
+          
+        }
+      }
+      .poshtibani__page__bottom {
+        overflow: auto;
+        height: 390px;
+        direction: ltr;
+        .poshtibani__page__bottom__top {
+          direction: rtl;
+          padding: 5px;
+          .poshtibani__page__bottom__top__bold {
+            font-family: var(--iranyekan);
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .poshtibani__page__bottom__top__regular {
+            font-family: var(--iranyekan);
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+        .poshtibani__page__bottom__center {
+          direction: rtl;
+          .poshtibani__page__bottom__center__items {
+            width: 340px;
+            border: 1px solid lightgray;
+            font-family: var(--iranyekan);
+            cursor: pointer;
+            outline: unset;
+            border-radius: 7px;
+            margin: 10PX auto;
+            details[open] .poshtibani__page__bottom__center__items__summary__svg {
+              transform: rotate(180deg);
+            }
+            .poshtibani__page__bottom__center__items__summary {
+              padding: 10px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .poshtibani__page__bottom__center__items__summary__text{
+                width: 85%;
+              }
+            }
+            .poshtibani__page__bottom__center__items__text {
+              margin-top: 10px;
+              font-size: 13px;
+              line-height: 25px;
+              word-spacing: 4px;
+              padding: 10px;
+            }
+            .poshtibani__page__bottom__center__items__hr {
+              width: 90%;
+              border: unset;
+              height: 1px;
+              background-color: lightgray;
+              margin: 0 auto;
+              margin-top: 10px;
+            }
+          }
+        }
+        .poshtibani__page__bottom__bottom{
+          font-family: var(--iranyekan);
+          margin-top: 40px;
+          .poshtibani__page__bottom__bottom__top{
+            text-align: center;
+            font-size: 14px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+          .poshtibani__page__bottom__bottom__bottom{
+            width: 70%;
+            height: 50px;
+            background-color:#19BFD3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            cursor: pointer;
+          }
+  
+        }
+      }
+    }
+  }
+  
+  #show:checked ~ .poshtibani__icon__down {
+    display: flex;
+  }
+  
+  #show:checked ~ .poshtibani__page {
+    display: block;
+  }
+  
+  

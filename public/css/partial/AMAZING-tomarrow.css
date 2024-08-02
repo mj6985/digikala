@@ -1,0 +1,131 @@
+.tomarrow-amazing {
+    width: 90%;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    .tomarrow-amazing__left {
+      width: 60%;
+      height: inherit;
+      background: left center no-repeat
+        url("../../../public/images/AMAZING-page/tommarow-amazing/backgroung.svg");
+      background-color: #f5f2f2;
+      border-radius: 15px 0 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .tomarrow-amazing__left__items {
+        width: 100%;
+        display: flex;
+        column-gap: 5px;
+        border-radius: 50%;
+        margin-right: 140px;
+        cursor: pointer;
+  
+        .tomarrow-amazing__left__item__product {
+          width: 74px;
+          height: 74px;
+          position: relative;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+  
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .tomarrow-amazing__left__items__discount {
+          width: 34px;
+          height: 20px;
+          background-color: #d32f2f;
+          border-radius: 15px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          font-family: var(--Bnazanin);
+          line-height: 20px;
+          color: white;
+          font-weight: 600;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .tomarrow-amazing__left__items__discount-1 {
+        width: 34px;
+        height: 20px;
+        background-color: #d32f2f;
+        border-radius: 15px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        font-family: var(--Bnazanin);
+        line-height: 20px;
+        color: white;
+        font-weight: 600;
+        right: 0;
+        bottom: 0;
+      }
+      .tomarrow-amazing__left__more {
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--iranyekan);
+        color: #f2394e;
+        font-size: 14px;
+        border-radius: 30px;
+        margin-left: 40px;
+        cursor: pointer;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+  .tomarrow-amazing__right {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right,
+      #f5f2f2,
+      #f5eded,
+      #f4e8e9,
+      #f4e3e5,
+      #f3dee2
+    );
+    border-radius: 0 15px 15px 0;
+    .tomarrow-amazing__right__text {
+      padding: 35px;
+  
+      .tomarrow-amazing__right__text__bottom {
+        font-family: var(--iranyekan);
+        font-size: 11px;
+      }
+    }
+    .tomarrow-amazing__right__timer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+      margin: 0 0 15px 0px;
+  
+      .tomarrow-amazing__right__timer__box {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-family: var(--Bnazanin);
+        background-color: white;
+        font-size: 20px;
+      }
+    }
+  }
+  

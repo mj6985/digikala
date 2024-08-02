@@ -1,0 +1,93 @@
+.montakhab-takhfif {
+    width: 90%;
+    height: 810px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+    .montakhab-takhfif__top {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      .motakhab-takhfif__top__text {
+        font-family: var(--iranyekan);
+        font-size: 20px;
+        line-height: 80px;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .montakhab-takhfif__items {
+      width: 100%;
+      height: 730px;
+      padding: 20px;
+      display: flex;
+      flex-flow: wrap;
+      cursor: pointer;
+  
+      .montakhab-takhfif__items__product {
+        width: 16.66%;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        border: unset;
+        border-left: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        margin: 0 auto;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+        .montakhab-takhfif__items__product__price {
+          width: 90%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0 0 0;
+          .montakhab-takhfif__items__product__price__now {
+            display: flex;
+            align-items: center;
+            font-family: var(--Bnazanin);
+            font-size: 18px;
+            font-weight: 600;
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .montakhab-takhfif__items__product__discount {
+            font-family: var(--Bnazanin);
+            width: 35px;
+            height: 20px;
+            padding: 0 6px;
+            background-color: #d32f2f;
+            line-height: 20px;
+            border-radius: 18px;
+            color: white;
+            font-weight: 550;
+          }
+        }
+        .montakhab-takhfif__items__product__pureprice {
+          width: 70%;
+          text-align: end;
+          text-decoration: line-through;
+          color: #d0c6c7;
+          font-family: var(--Bnazanin);
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+    .montakhab-takhfif__items__product__border__unset {
+      border-left: unset !important;
+    }
+  }
+  

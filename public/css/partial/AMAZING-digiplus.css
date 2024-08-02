@@ -1,0 +1,122 @@
+.AMAZING-digiplus {
+    width: 90%;
+    height: 110px;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    .AMAZING-digiplus__right {
+      width: 50%;
+      height: 110px;
+      background: right center no-repeat
+        url("../../../public/images/AMAZING-page/digiplus/cover-2.svg") #eceeee;
+      background-color: #eae1e9;
+      border-radius: 0 15px 15px 0;
+      img {
+        margin: 15px 30px 0 0;
+      }
+    }
+    .AMAZING-digiplus__left {
+      width: 50%;
+      height: 110px;
+      background: left center no-repeat
+        url("../../../public/images/AMAZING-page/digiplus/cover-1.svg") #eceeee;
+      background-color: #eae1e9;
+      border-radius: 15px 0 0 15px;
+      display: flex;
+      flex-flow: row wrap;
+      .AMAZING-digiplus__left__top {
+        width: 90%;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--iranyekan);
+        color: #b253ad;
+        text-align: left;
+        margin: 20px 110px 0 0;
+      }
+      .AMAZING-digiplus__left__bottom {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 200px;
+  
+        .AMAZING-digiplus__left__bottom__timer {
+          width: 40%;
+          display: flex;
+          flex-flow: row wrap;
+          font-family: var(--iranyekan);
+          .AMAZING-digiplus__left__bottom__timer__second {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            margin: 10px 0px 50px 0;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .AMAZING-digiplus__left__bottom__timer__second__text {
+              font-size: 9px;
+            }
+            .AMAZING-digiplus__left__bottom__timer__second__countdown {
+              font-size: 14px;
+            }
+          }
+          .AMAZING-digiplus__left__bottom__timer__minute {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .AMAZING-digiplus__left__bottom__timer__minute__text {
+              font-size: 9px;
+            }
+            .AMAZING-digiplus__left__bottom__timer__minute__countdown {
+              font-size: 14px;
+            }
+          }
+          .AMAZING-digiplus__left__bottom__timer__hour {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .AMAZING-digiplus__left__bottom__timer__hour__text {
+              font-size: 9px;
+            }
+            .AMAZING-digiplus__left__bottom__timer__hour__countdown {
+              font-size: 14px;
+            }
+          }
+        }
+        .AMAZING-digiplus__left__bottom__start {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 5px;
+          font-family: var(--iranyekan);
+          font-size: 12px;
+          margin-bottom: 40px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+  
